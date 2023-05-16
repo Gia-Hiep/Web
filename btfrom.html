@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vivi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập from1 </title>
+    <style>
+        h1 {
+            text-align:center;
+            color:rgb(54, 35, 13);
+        }
+        #container{
+            width: 500px;
+            background: rgb(111, 204, 243);
+            border-radius:20px;
+            padding: 5px;
+            margin: 10px auto;
+            padding-left:10px;
+            padding-right:30px;
+        }
+        #span1 {
+            background: rgb(187, 219, 72);
+            border-radius:100%;
+            padding: 8px 15px 8px 14px;
+            font-size: 30px;
+            color: white;
+            display:inline-block;
+        }
+        input {
+            width: 100%;
+            margin-top:12px;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 5px;
+        }
+        b {
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        #tuoi {
+            width:auto;
+        }
+        #img{
+            width:30%;
+            float:left;
+            margin:10px auto;
+            padding-left: 60px;
+            padding-right:20px;
+            background:red;
+            height: 800px;
+        }
+        #bio {
+            padding-bottom: 20px;
+        }
+        #jobid {
+            width: 104px;
+            height: 31px;
+            padding: 5px;
+            background: aqua;
+            color: black;
+        }
+        #submit1 {
+            border-radius:20px;
+            padding: 20px;
+            font-size:20px;
+            color:blue;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="/asd.jpg" id="img">-->
+    <div id="container">
+        <form action="abc.php" method="post">
+            <h1>SIGN UP</h1>
+            <span id="span1">1</span>
+            <span style="font-size: 30px ; padding-left: 10px">Nhập thông tin</span>
+            <br>
+            <b>NAME</b>
+            <br>
+            <input type="text" placeholder="Nhap ten cua ban" >
+            <br>
+            <b>Email</b>
+            <br>
+            <input type="text" placeholder="Nhap email cua ban" >
+            <br>
+            <b>Password</b>
+            <br>
+            <input type="password" placeholder="Nhap mat khau" >
+            <br>
+            <b>Age</b>
+            <br>
+            <input id="tuoi" type="radio" name="tuoi1">Dưới 18
+            <br>
+            <input id="tuoi" type="radio" name="tuoi1">Trên 18
+            <br>
+            <span id="span1">2</span>
+            <span style="font-size: 30px ; padding-left: 10px">Your Profile</span>
+            <br>
+            <b>Tiểu Sử</b>
+            <br>
+            <br>
+            <textarea id="bio" placeholder="Nhap tieu su" cols="65" rows="5"></textarea>
+            <br>
+            <b>Job role: </b>
+            <select name="job" id="jobid">
+                <optgroup label="Web">
+                    <option value="web1">front-end</option>
+                    <option value="web2">back-end</option>
+                    <option value="web3">fullstack</option>
+                </optgroup>
+                <optgroup label="App">
+                    <option value="app1">Android</option>
+                    <option value="app2">IOS</option>
+                    <option value="app3">Window</option>
+                </optgroup>
+            </select>
+            <br>
+            <b>Sở Thích</b>
+            <br>
+            <input type="checkbox" name="st1" style="width:auto ; font-size:15px;">Dev</input>
+            <br>
+            <input type="checkbox" name="st1" style="width:auto; font-size:15px">Design</input>
+            <br>
+            <input type="checkbox" name="st1" style="width:auto; font-size:15px">Business</input>
+            <br>
+            <input type="Submit" value="Sign Up Now" id="submit1">
+        </from>
+    </div>
+</body>
+</html>
